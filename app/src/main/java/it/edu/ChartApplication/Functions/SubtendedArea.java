@@ -15,11 +15,9 @@ public class SubtendedArea {
     public ArrayList<Entry> getLineEntries() {
         return lineEntries;
     }
-
     public ArrayList<Entry> getScatterEntries() {
         return scatterEntries;
     }
-
 
     public void drawFunction(float xMin, float xMax, boolean y, String function){
         MathExpression mathExpression = new MathExpression(function);
