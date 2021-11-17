@@ -8,7 +8,6 @@ import java.util.ArrayList;
 public class SubtendedArea {
 
     float yMax;
-    int internalPoint = 0;
     private ArrayList<Entry> lineEntries = new ArrayList<>();
     private ArrayList<Entry> scatterEntries = new ArrayList<>();
 
@@ -62,7 +61,6 @@ public class SubtendedArea {
             mathExpression.setValue("x", String.valueOf(x));
 
             if ( y <= Math.abs(Float.parseFloat(mathExpression.solve()))){
-                internalPoint++;
                 scatterEntries.add(new Entry(x,y));
             }
         }
