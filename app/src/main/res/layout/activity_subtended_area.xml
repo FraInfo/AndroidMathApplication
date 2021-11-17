@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".SubtendedAreaActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalcArea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.github.mikephil.charting.charts.CombinedChart
+                    android:id="@+id/combined_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/main_round_foreground"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </com.github.mikephil.charting.charts.CombinedChart>
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Function f(x)"
+                    android:textColor="@color/blue_1"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/combined_chart" />
+
+                <EditText
+                    android:id="@+id/editTextFunctionA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:backgroundTint="@color/blue_2"
+                    android:ems="15"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:hint="3*sin(x)/cos(x)"
+                    android:textColorHint="@color/blue_2"
+                    android:textColor="#fff"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Number of Points"
+                    android:textColor="@color/blue_1"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/editTextFunctionA"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextFunctionA" />
+
+                <EditText
+                    android:id="@+id/editTextNumberPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:autofillHints="false"
+                    android:ems="8"
+                    android:hint="Number of points"
+                    android:inputType="numberDecimal"
+                    android:minHeight="48dp"
+                    android:textColorHint="@color/blue_2"
+                    android:textColor="#fff"
+                    android:backgroundTint="@color/blue_2"
+                    app:layout_constraintStart_toStartOf="@+id/textView17"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Interval [a,b]"
+                    android:textColor="@color/blue_1"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/editTextNumberPoints"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNumberPoints" />
+
+                <EditText
+                    android:id="@+id/editTextIntervalA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:autofillHints="false"
+                    android:backgroundTint="@color/blue_2"
+                    android:ems="5"
+                    android:hint="a"
+                    android:minHeight="48dp"
+                    android:textColor="#fff"
+                    android:textColorHint="@color/blue_2"
+                    app:layout_constraintStart_toStartOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <EditText
+                    android:id="@+id/editTextIntervalB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="7dp"
+                    android:autofillHints="false"
+                    android:backgroundTint="@color/blue_2"
+                    android:ems="5"
+                    android:hint="b"
+                    android:minHeight="48dp"
+                    android:textColor="#fff"
+                    android:textColorHint="@color/blue_2"
+                    app:layout_constraintStart_toEndOf="@+id/editTextIntervalA"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <Switch
+                    android:id="@+id/switchABS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="ABS"
+                    android:textColor="@color/blue_1"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/editTextIntervalA"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextIntervalA" />
+
+                <Switch
+                    android:id="@+id/switchAnimate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="7dp"
+                    android:text="Animate"
+                    android:textColor="@color/blue_1"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/blue_1"
+                    app:layout_constraintStart_toEndOf="@+id/switchABS"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextIntervalA" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonCalcArea"
+        android:layout_width="123dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#3949a3"
+        android:onClick="sendValueCalc"
+        android:text="calc"
+        android:textAlignment="center"
+        android:textColor="@color/blue_3"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
