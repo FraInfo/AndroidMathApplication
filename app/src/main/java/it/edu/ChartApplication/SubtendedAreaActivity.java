@@ -23,8 +23,6 @@ public class SubtendedAreaActivity extends AppCompatActivity {
 
     private CombinedChart combinedChart;
     private EditText editTextFunctionA;
-    private EditText editTextFunctionB;
-    private EditText editTextFunctionC;
     private Switch switchAnimate;
     private Switch switchABS;
     private EditText editTextPoint;
@@ -63,15 +61,15 @@ public class SubtendedAreaActivity extends AppCompatActivity {
             float _a = Float.parseFloat(String.valueOf(_editTextA.getText()));
             float _b = Float.parseFloat(String.valueOf(_editTextB.getText()));
 
-            String a = String.valueOf(editTextFunctionA.getText());
+            String function = "x=0;" + editTextFunctionA.getText();
 
-            int n = Integer.parseInt(String.valueOf(editTextPoint.getText()));
+            int pointsNumber = Integer.parseInt(String.valueOf(editTextPoint.getText()));
 
             abs = switchABS.isChecked() ? true : false;
             if (abs) {
-                subtendedArea.getChart(_a, _b, n, true, a);
+                subtendedArea.getChart(_a, _b, pointsNumber, true, function);
             } else {
-                subtendedArea.getChart(_a, _b, n, false, a);
+                subtendedArea.getChart(_a, _b, pointsNumber, false, function);
             }
 
             LineDataSet lineDataSet = new LineDataSet(subtendedArea.getLineEntries(), "Function");
