@@ -53,7 +53,6 @@ public class SubtendedAreaActivity extends AppCompatActivity {
         combinedChart.setVisibility(View.VISIBLE);
     }
 
-
     public void drawFunction() {
         try {
             SubtendedArea subtendedArea = new SubtendedArea();
