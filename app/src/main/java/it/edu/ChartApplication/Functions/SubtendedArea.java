@@ -15,15 +15,12 @@ public class SubtendedArea {
     public ArrayList<Entry> getLineEntries() {
         return lineEntries;
     }
-
     public ArrayList<Entry> getScatterEntries() {
         return scatterEntries;
     }
 
-
-    public void drawFunction(float xMin, float xMax, boolean y, String s){
-        String expression = "x=0;"+s;
-        MathExpression mathExpression = new MathExpression(expression);
+    public void drawFunction(float xMin, float xMax, boolean y, String function){
+        MathExpression mathExpression = new MathExpression(function);
         for (float i = xMin; i < xMax; i += .1){
             mathExpression.setValue("x", String.valueOf(i));
             if (y){
@@ -34,14 +31,14 @@ public class SubtendedArea {
         }
     }
 
-    float findMax (float a, float b, String s){
-        String expression = "x=0;"+s;
-        MathExpression mathExpression = new MathExpression(expression);
+    float findMax (float a, float b, String function){
+        MathExpression mathExpression = new MathExpression(function);
         mathExpression.setValue("x", String.valueOf(a));
 
         yMax = Float.parseFloat(mathExpression.solve());
 
         for (float i = a; i < b; i += .1){
+            mathExpression.setValue("x", String.valueOf(i));
             yMax = Float.parseFloat(mathExpression.solve()) > yMax ? Float.parseFloat(mathExpression.solve()) : yMax;
         }
         return yMax;
@@ -55,11 +52,10 @@ public class SubtendedArea {
         return (float) Math.random() * (yMax);
     }
 
-    public void drawPoint (float a, float b, int n, String s){
-        String expression = "x=0;"+s;
-        MathExpression mathExpression = new MathExpression(expression);
+    public void drawPoint (float a, float b, int n, String function){
+        MathExpression mathExpression = new MathExpression(function);
 
-        for (float i = 0; i < n; i++){
+        for (;n-->0;){
             float x = randomPointX(a,b);
             float y = randomPointY();
 
@@ -72,10 +68,10 @@ public class SubtendedArea {
         }
     }
 
-    public void getChart (float a, float b, int n, boolean y, String s){
-        findMax(a,b,s);
-        drawFunction(a,b,y,s);
-        drawPoint(a,b,n,s);
+    public void getChart (float a, float b, int n, boolean y, String function){
+        findMax(a,b,function);
+        drawFunction(a,b,y,function);
+        drawPoint(a,b,n,function);
     }
 
 }
