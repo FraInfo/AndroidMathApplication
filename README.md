@@ -7,3 +7,6 @@ Android Java Application which contains some Java school projects classes:
   - Compute of function's subtended area with Monte Carlo method.
 
 Implementation of Combined Chart and Math Parser for compute the function inserted from the input.
+
+Is possible to:
+ - Insert a function from input and see it on Line Chart.
