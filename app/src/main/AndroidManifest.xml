@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Main">
         <activity
+            android:name=".SecantActivity"
+            android:exported="false" />
+        <activity
             android:name=".NewtonRaphsonActivity"
             android:exported="false" />
         <activity
