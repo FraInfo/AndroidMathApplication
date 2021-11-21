@@ -44,7 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="7dp"
-                    android:text="Interval [a,b] for bisection"
+                    android:text="Interval [a,b] for compute the zero"
                     android:textColor="@color/blue_1"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/editTextIntervalA"
