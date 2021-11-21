@@ -36,7 +36,7 @@ public class BisectionActivity extends AppCompatActivity {
 
         combinedChart = findViewById(R.id.combined_chart);
         editTextFunctionA = findViewById(R.id.editTextFunctionA);
-        textViewBisection = findViewById(R.id.textViewBisection);
+        textViewBisection = findViewById(R.id.textViewZero);
         _editTextA = findViewById(R.id.editTextIntervalA);
         _editTextB = findViewById(R.id.editTextIntervalB);
         _editTextA2 = findViewById(R.id.editTextIntervalA2);

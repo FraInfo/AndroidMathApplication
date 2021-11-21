@@ -15,7 +15,6 @@ import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 
 import it.edu.ChartApplication.Functions.Cord;
-import it.edu.ChartApplication.Functions.Secant;
 
 public class CordActivity extends AppCompatActivity {
 
@@ -37,7 +36,7 @@ public class CordActivity extends AppCompatActivity {
 
         combinedChart = findViewById(R.id.combined_chart);
         editTextFunctionA = findViewById(R.id.editTextFunctionA);
-        textViewBisection = findViewById(R.id.textViewBisection);
+        textViewBisection = findViewById(R.id.textViewZero);
         _editTextA = findViewById(R.id.editTextIntervalA);
         _editTextB = findViewById(R.id.editTextIntervalB);
         _editTextA2 = findViewById(R.id.editTextIntervalA2);
