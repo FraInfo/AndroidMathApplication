@@ -5,13 +5,13 @@ import com.itis.libs.parserng.android.expressParser.MathExpression;
 
 import java.util.ArrayList;
 
+import it.edu.ChartApplication.BisectionActivity;
+
 public class Bisection {
 
     String function;
     static final double eps = 0.00001;
     static final long JMAX = 1000;
-    static final float xMin = -10;
-    static final float xMax = 10;
 
     public Bisection(String function){
         this.function = function;
@@ -24,7 +24,7 @@ public class Bisection {
         return lineEntries;
     }
 
-    public void drawFunction(String function) {
+    public void drawFunction(float xMin, float xMax, String function) {
         MathExpression mathExpression = new MathExpression(function);
         for (float i = xMin; i < xMax; i += .1) {
             mathExpression.setValue("x", String.valueOf(i));
@@ -86,10 +86,6 @@ public class Bisection {
             }
             System.out.println(Xm);
             return Xm;
-    }
-
-    public void getChart (float a, float b, String function){
-        drawFunction(function);
     }
 
 }
