@@ -27,6 +27,60 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <TextView
+                    android:id="@+id/textViewBisection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text=""
+                    android:textColor="@color/blue_1"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/combined_chart" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Interval [a,b] for bisection"
+                    android:textColor="@color/blue_1"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/editTextIntervalA"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextIntervalA" />
+
+                <EditText
+                    android:id="@+id/editTextIntervalA2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:autofillHints="false"
+                    android:backgroundTint="@color/blue_2"
+                    android:ems="5"
+                    android:hint="a"
+                    android:minHeight="48dp"
+                    android:textColor="#fff"
+                    android:textColorHint="@color/blue_2"
+                    app:layout_constraintStart_toStartOf="@+id/textView28"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+                <EditText
+                    android:id="@+id/editTextIntervalB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="7dp"
+                    android:autofillHints="false"
+                    android:backgroundTint="@color/blue_2"
+                    android:ems="5"
+                    android:hint="b"
+                    android:minHeight="48dp"
+                    android:textColor="#fff"
+                    android:textColorHint="@color/blue_2"
+                    app:layout_constraintStart_toEndOf="@+id/editTextIntervalA2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
                 <com.github.mikephil.charting.charts.CombinedChart
                     android:id="@+id/combined_chart"
                     android:layout_width="match_parent"
@@ -47,12 +101,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:text="Function f(x)"
                     android:textColor="@color/blue_1"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/combined_chart" />
+                    app:layout_constraintTop_toBottomOf="@+id/textViewBisection" />
 
                 <EditText
                     android:id="@+id/editTextFunctionA"
@@ -75,7 +129,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="7dp"
-                    android:text="Interval [a,b]"
+                    android:text="Interval [a,b] for chart"
                     android:textColor="@color/blue_1"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/editTextFunctionA"
@@ -122,8 +176,8 @@
                     android:text="Animate"
                     android:textColor="@color/blue_1"
                     android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="@+id/editTextIntervalA"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextIntervalA" />
+                    app:layout_constraintStart_toStartOf="@+id/editTextIntervalA2"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextIntervalA2" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
