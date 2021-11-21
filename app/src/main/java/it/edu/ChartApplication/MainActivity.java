@@ -25,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), BisectionActivity.class));
     }
 
+    public void onClickButtonNewtonRaphson(View view) {
+        startActivity(new Intent(getApplicationContext(), NewtonRaphsonActivity.class));
+    }
+
     public void onClickButtonSubtendedArea(View view) {
         startActivity(new Intent(getApplicationContext(), SubtendedAreaActivity.class));
     }
