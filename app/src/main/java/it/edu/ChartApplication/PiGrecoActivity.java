@@ -34,6 +34,7 @@ public class PiGrecoActivity extends AppCompatActivity {
 
     public void sendValue(View view) {
         try {
+            scatterChart.setVisibility(View.VISIBLE);
             PiGreco piGreco = new PiGreco();
             textPI.setText((int) Float.parseFloat(String.valueOf(Double.valueOf(piGreco.calculatePI(insidePoint(), Integer.parseInt(String.valueOf(pointsNumber.getText())))))));
             scatterChart.invalidate();
