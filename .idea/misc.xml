@@ -4,12 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/Chart Application/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.5661458333333333" />
+        <entry key="..\:/AndroidStudioProjects/Chart Application/app/src/main/res/drawable/ic_baseline_show_chart_108.xml" value="0.5533333333333333" />
+        <entry key="..\:/AndroidStudioProjects/Chart Application/app/src/main/res/drawable/ic_baseline_show_chart_24.xml" value="0.5533333333333333" />
         <entry key="..\:/AndroidStudioProjects/Chart Application/app/src/main/res/drawable/ic_launcher_background.xml" value="0.5661458333333333" />
+        <entry key="..\:/AndroidStudioProjects/Chart Application/app/src/main/res/drawable/ic_line_chart_fill.xml" value="0.5533333333333333" />
         <entry key="..\:/AndroidStudioProjects/Chart Application/app/src/main/res/drawable/main_background.xml" value="0.5661458333333333" />
         <entry key="..\:/AndroidStudioProjects/Chart Application/app/src/main/res/drawable/main_roundTab_background.xml" value="0.5661458333333333" />
         <entry key="..\:/AndroidStudioProjects/Chart Application/app/src/main/res/drawable/main_round_foreground.xml" value="0.49907407407407406" />
         <entry key="..\:/AndroidStudioProjects/Chart Application/app/src/main/res/drawable/main_tab_background.xml" value="0.34427083333333336" />
-        <entry key="..\:/AndroidStudioProjects/Chart Application/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Chart Application/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/AndroidStudioProjects/Chart Application/app/src/main/res/layout/activity_monte_carlo.xml" value="0.4269449715370019" />
         <entry key="..\:/AndroidStudioProjects/Chart Application/app/src/main/res/layout/activity_subtended_area.xml" value="0.5" />
       </map>
