@@ -36,7 +36,7 @@ public class PiGrecoActivity extends AppCompatActivity {
         try {
             scatterChart.setVisibility(View.VISIBLE);
             PiGreco piGreco = new PiGreco();
-            textPI.setText((int) Float.parseFloat(String.valueOf(Double.valueOf(piGreco.calculatePI(insidePoint(), Integer.parseInt(String.valueOf(pointsNumber.getText())))))));
+            textPI.setText("PI Greco value: " + (Double.valueOf(Double.valueOf(piGreco.calculatePI(insidePoint(), Integer.parseInt(String.valueOf(pointsNumber.getText())))))));
             scatterChart.invalidate();
             ScatterDataSet scatterDataSet = new ScatterDataSet(piGreco.getScatterEntries(), "Point");
             ScatterData scatterData = new ScatterData(scatterDataSet);
