@@ -21,7 +21,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onClickButton1(View view) {
+    public void onClickButtonBisection(View view) {
+        startActivity(new Intent(getApplicationContext(), BisectionActivity.class));
+    }
+
+    public void onClickButtonSubtendedArea(View view) {
         startActivity(new Intent(getApplicationContext(), SubtendedAreaActivity.class));
     }
 
