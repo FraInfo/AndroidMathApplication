@@ -21,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void onClickButtonPiGreco(View view) {
+        startActivity(new Intent(getApplicationContext(), PiGrecoActivity.class));
+    }
+
     public void onClickButtonBisection(View view) {
         startActivity(new Intent(getApplicationContext(), BisectionActivity.class));
     }
