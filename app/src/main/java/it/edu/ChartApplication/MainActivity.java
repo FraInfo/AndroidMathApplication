@@ -33,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), SecantActivity.class));
     }
 
+    public void onClickButtonCord(View view) {
+        startActivity(new Intent(getApplicationContext(), CordActivity.class));
+    }
+
     public void onClickButtonSubtendedArea(View view) {
         startActivity(new Intent(getApplicationContext(), SubtendedAreaActivity.class));
     }
