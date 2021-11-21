@@ -28,7 +28,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textViewBisection"
+                    android:id="@+id/textViewZero"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -106,7 +106,7 @@
                     android:textColor="@color/blue_1"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewBisection" />
+                    app:layout_constraintTop_toBottomOf="@+id/textViewZero" />
 
                 <EditText
                     android:id="@+id/editTextFunctionA"
