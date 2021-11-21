@@ -5,8 +5,6 @@ import com.itis.libs.parserng.android.expressParser.MathExpression;
 
 import java.util.ArrayList;
 
-import it.edu.ChartApplication.BisectionActivity;
-
 public class Bisection {
 
     String function;
@@ -18,7 +16,6 @@ public class Bisection {
     }
 
     private ArrayList<Entry> lineEntries = new ArrayList<>();
-    private ArrayList<Entry> scatterEntries = new ArrayList<>();
 
     public ArrayList<Entry> getLineEntries() {
         return lineEntries;
@@ -30,7 +27,6 @@ public class Bisection {
             mathExpression.setValue("x", String.valueOf(i));
 
             lineEntries.add(new Entry(i, Float.parseFloat(mathExpression.solve())));
-
         }
     }
 
@@ -55,7 +51,7 @@ public class Bisection {
         Fb = solveFunction(b);
 
         if (Fa * Fb >= 0) {
-            System.out.println("Invalid range");
+            return -1;
         } else {
             Xa = a;
             Xb = b;
@@ -80,9 +76,8 @@ public class Bisection {
                 if (end) {
                     break;
                 } else {
-                    System.out.println("too");
+                    return -1;
                 }
-
             }
             System.out.println(Xm);
             return Xm;

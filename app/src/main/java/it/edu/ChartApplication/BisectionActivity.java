@@ -44,8 +44,6 @@ public class BisectionActivity extends AppCompatActivity {
         switchAnimate = findViewById(R.id.switchAnimate);
     }
 
-
-
     public void sendValueCalc(View view) {
         drawFunction();
         combinedChart.setVisibility(View.VISIBLE);
