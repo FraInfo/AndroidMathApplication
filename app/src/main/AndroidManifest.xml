@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Main">
         <activity
+            android:name=".BisectionActivity"
+            android:exported="false" />
+        <activity
             android:name=".SubtendedAreaActivity"
             android:exported="false" />
         <activity
