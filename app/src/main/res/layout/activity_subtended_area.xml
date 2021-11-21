@@ -11,7 +11,6 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="24dp"
         android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonCalcArea"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,6 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="400dp"
                     android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
                     android:layout_marginEnd="24dp"
                     android:background="@drawable/main_round_foreground"
                     android:visibility="invisible"
@@ -61,11 +61,11 @@
                     android:layout_marginTop="7dp"
                     android:backgroundTint="@color/blue_2"
                     android:ems="15"
+                    android:hint="3*sin(x)/cos(x)"
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
-                    android:hint="3*sin(x)/cos(x)"
-                    android:textColorHint="@color/blue_2"
                     android:textColor="#fff"
+                    android:textColorHint="@color/blue_2"
                     app:layout_constraintStart_toStartOf="@+id/textView16"
                     app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -87,13 +87,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="7dp"
                     android:autofillHints="false"
+                    android:backgroundTint="@color/blue_2"
                     android:ems="8"
                     android:hint="Number of points"
                     android:inputType="numberDecimal"
                     android:minHeight="48dp"
-                    android:textColorHint="@color/blue_2"
                     android:textColor="#fff"
-                    android:backgroundTint="@color/blue_2"
+                    android:textColorHint="@color/blue_2"
                     app:layout_constraintStart_toStartOf="@+id/textView17"
                     app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
@@ -156,10 +156,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14dp"
                     android:layout_marginTop="7dp"
+                    android:shadowColor="@color/blue_1"
                     android:text="Animate"
                     android:textColor="@color/blue_1"
                     android:textStyle="bold"
-                    android:shadowColor="@color/blue_1"
                     app:layout_constraintStart_toEndOf="@+id/switchABS"
                     app:layout_constraintTop_toBottomOf="@+id/editTextIntervalA" />
 

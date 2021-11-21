@@ -103,7 +103,7 @@
                                         android:layout_height="wrap_content"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        app:srcCompat="@drawable/ic_launcher_foreground" />
+                                        app:srcCompat="@drawable/ic_baseline_bubble_chart_108" />
 
                                     <TextView
                                         android:id="@+id/textView4"
@@ -124,9 +124,10 @@
                                         android:layout_width="0dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginEnd="12dp"
-                                        android:text="Application for calculate the value of PI Greco with Monte Carlo method"
+                                        android:text="Application computing the value of Pi Greco using Monte Carlo method with implementation of UI Design."
                                         android:textColor="@color/blue_3"
                                         android:textSize="14dp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="@+id/textView4"
                                         app:layout_constraintTop_toBottomOf="@+id/textView4"
@@ -166,7 +167,7 @@
                                         android:layout_height="wrap_content"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        app:srcCompat="@drawable/ic_launcher_foreground" />
+                                        app:srcCompat="@drawable/ic_baseline_show_chart_108" />
 
                                     <TextView
                                         android:id="@+id/textView6"
@@ -174,7 +175,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginStart="7dp"
                                         android:layout_marginTop="7dp"
-                                        android:text="Root"
+                                        android:text="Square Root"
                                         android:textColor="#fff"
                                         android:textSize="18dp"
                                         android:textStyle="bold"
@@ -187,9 +188,10 @@
                                         android:layout_width="0dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginEnd="12dp"
-                                        android:text="Application for calculate the value of PI Greco with Monte Carlo method"
+                                        android:text="Application computing the approximate value of square root with implementation of UI Design"
                                         android:textColor="@color/blue_3"
                                         android:textSize="14dp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="@+id/textView6"
                                         app:layout_constraintTop_toBottomOf="@+id/textView6"
@@ -229,7 +231,7 @@
                                         android:layout_height="wrap_content"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        app:srcCompat="@drawable/ic_launcher_foreground" />
+                                        app:srcCompat="@drawable/ic_baseline_show_chart_108" />
 
                                     <TextView
                                         android:id="@+id/textView8"
@@ -250,9 +252,10 @@
                                         android:layout_width="0dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginEnd="12dp"
-                                        android:text="Application for calculate the value of PI Greco with Monte Carlo method"
+                                        android:text="Application computing the zero of a function using bisection method with implementation of UI Design"
                                         android:textColor="@color/blue_3"
                                         android:textSize="14dp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="@+id/textView8"
                                         app:layout_constraintTop_toBottomOf="@+id/textView8"
@@ -292,7 +295,7 @@
                                         android:layout_height="wrap_content"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        app:srcCompat="@drawable/ic_launcher_foreground" />
+                                        app:srcCompat="@drawable/ic_baseline_show_chart_108" />
 
                                     <TextView
                                         android:id="@+id/textView10"
@@ -313,9 +316,10 @@
                                         android:layout_width="0dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginEnd="12dp"
-                                        android:text="Application for calculate the value of PI Greco with Monte Carlo method"
+                                        android:text="Application computing the zero of a function using Newton - Raphson method with implementation of UI Design"
                                         android:textColor="@color/blue_3"
                                         android:textSize="14dp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="@+id/textView10"
                                         app:layout_constraintTop_toBottomOf="@+id/textView10"
@@ -355,7 +359,7 @@
                                         android:layout_height="wrap_content"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        app:srcCompat="@drawable/ic_launcher_foreground" />
+                                        app:srcCompat="@drawable/ic_baseline_show_chart_108" />
 
                                     <TextView
                                         android:id="@+id/textView12"
@@ -375,9 +379,10 @@
                                         android:layout_width="0dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginEnd="12dp"
-                                        android:text="Application for calculate the value of PI Greco with Monte Carlo method"
+                                        android:text="Application computing the zero of a function using secant method with implementation of UI Design"
                                         android:textColor="@color/blue_3"
                                         android:textSize="14dp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="@+id/textView12"
                                         app:layout_constraintTop_toBottomOf="@+id/textView12" />
@@ -416,7 +421,7 @@
                                         android:layout_height="wrap_content"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        app:srcCompat="@drawable/ic_launcher_foreground" />
+                                        app:srcCompat="@drawable/ic_baseline_show_chart_108" />
 
                                     <TextView
                                         android:id="@+id/textView14"
@@ -424,7 +429,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginStart="7dp"
                                         android:layout_marginTop="7dp"
-                                        android:text="Corde"
+                                        android:text="Cord"
                                         android:textColor="#fff"
                                         android:textSize="18dp"
                                         android:textStyle="bold"
@@ -436,9 +441,10 @@
                                         android:layout_width="0dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginEnd="12dp"
-                                        android:text="Application for calculate the value of PI Greco with Monte Carlo method"
+                                        android:text="Application computing the zero of a function using cord method with implementation of UI Design"
                                         android:textColor="@color/blue_3"
                                         android:textSize="14dp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="@+id/textView14"
                                         app:layout_constraintTop_toBottomOf="@+id/textView14" />
@@ -477,7 +483,7 @@
                                         android:layout_height="wrap_content"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        app:srcCompat="@drawable/ic_launcher_foreground" />
+                                        app:srcCompat="@drawable/ic_baseline_bubble_chart_108" />
 
                                     <TextView
                                         android:id="@+id/textView2"
@@ -497,9 +503,10 @@
                                         android:layout_width="0dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginEnd="12dp"
-                                        android:text="Application for calculate the value of PI Greco with Monte Carlo method"
+                                        android:text="Application showing the subtended area of a function using Monte Carlo method with implementation of UI Design"
                                         android:textColor="@color/blue_3"
                                         android:textSize="14dp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="@+id/textView2"
                                         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -547,11 +554,22 @@
                         android:id="@+id/textView23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Design"
+                        android:text="Line Chart"
                         android:textColor="@color/blue_1"
                         android:textSize="16dp"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scroll ->"
+                        android:textColor="@color/blue_1"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <HorizontalScrollView
@@ -588,7 +606,7 @@
                                         android:layout_height="wrap_content"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        app:srcCompat="@drawable/ic_launcher_foreground" />
+                                        app:srcCompat="@drawable/ic_baseline_show_chart_108" />
 
                                     <TextView
                                         android:id="@+id/textView22"
@@ -608,9 +626,10 @@
                                         android:layout_width="0dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginEnd="12dp"
-                                        android:text="Application for calculate the value of PI Greco with Monte Carlo method"
+                                        android:text="Application showing the function inserted from UI in a given range"
                                         android:textColor="@color/blue_3"
                                         android:textSize="14dp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="@+id/textView22"
                                         app:layout_constraintTop_toBottomOf="@+id/textView22" />
@@ -665,10 +684,11 @@
                                         android:id="@+id/textView26"
                                         android:layout_width="0dp"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginEnd="12dp"
-                                        android:text="Application for calculate the value of PI Greco with Monte Carlo method"
+                                        android:layout_marginEnd="7dp"
+                                        android:text="..."
                                         android:textColor="@color/blue_3"
                                         android:textSize="14dp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="@+id/textView25"
                                         app:layout_constraintTop_toBottomOf="@+id/textView25" />
