@@ -1,4 +1,6 @@
 # AndroidMathApplication
+[![CodeFactor](https://www.codefactor.io/repository/github/frainfo/androidmathapplication/badge)](https://www.codefactor.io/repository/github/frainfo/androidmathapplication) </br>
+
 School project. 
 
 Android Java Application which contains some Java school projects classes:
